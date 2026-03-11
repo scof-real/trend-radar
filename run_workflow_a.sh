@@ -45,6 +45,14 @@ echo "=== D0 Trend Radar — Workflow A ==="
 echo "Date: $DATE"
 echo ""
 
+# Workflow B: Grok 校准（每天在 Workflow A 之前运行）
+CURRENT_STEP="Workflow B: Grok Calibration"
+echo "--- Workflow B: Grok Calibration ---"
+python3 "$WORKSPACE/calibrate_grok.py" || {
+  echo "[WARN] Grok calibration failed or no response — continuing with existing seed list"
+}
+echo ""
+
 # Step 1: 抓取 + 过滤
 CURRENT_STEP="Step 1: Collect & Filter"
 echo "--- Step 1: Collect & Filter ---"

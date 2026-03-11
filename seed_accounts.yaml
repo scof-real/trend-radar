@@ -1,0 +1,60 @@
+calibration:
+  frequency: daily
+  method: grok_browser
+  run_before_workflow_a: true
+filter:
+  min_likes: 50
+  min_retweets: 20
+  tweets_per_account: 30
+schedule:
+  frequency: daily
+  time: 09:00
+seed_accounts:
+- category: AI x Crypto
+  handle: '@ChainOpera_AI'
+  reason: 去中心化AI agent网络更新，捕捉AI+onchain协作趋势
+  type: observer
+- category: AI x Crypto
+  handle: '@nansen_ai'
+  reason: 链上数据+AI工具信号，实时智能钱包动向
+  type: observer
+- category: AI x Crypto
+  handle: '@ai_on_chain'
+  reason: 专注AI onchain项目，分享新兴叙事（AI下单/自动化）
+  type: observer
+- category: AI x Crypto
+  handle: '@morlabs'
+  reason: Morpheus AI网络领袖，讨论AI agent经济/链上操作
+  type: observer
+- category: Telegram Bot
+  handle: '@Unibot'
+  reason: Telegram sniper Bot更新/用户反馈，观察增长策略
+  type: native
+- category: Telegram Bot
+  handle: '@bananagun'
+  reason: 主流交易Bot，捕捉运营活动/反馈，Gen-Z迁移案例
+  type: native
+- category: Telegram Bot
+  handle: '@maestrobots'
+  reason: 热门Telegram Bot，实时功能迭代（如AI增强交易）
+  type: native
+- category: Telegram Bot
+  handle: '@bonk_bot'
+  reason: Meme/交易Bot，Gen-Z生活方式工具，Bot执行操作案例
+  type: native
+- category: CLI Tools
+  handle: '@charmcli'
+  reason: CLI工具设计哲学，交互方式借鉴
+  type: native
+- category: CLI Tools
+  handle: '@fig'
+  reason: Fig CLI增强工具开发者，分享终端自动化/AI集成
+  type: native
+- category: Gen-Z Crypto
+  handle: '@gaby_goldberg'
+  reason: a16z视角，Gen-Z x Crypto交叉，文化观察
+  type: observer
+- category: Gen-Z Crypto
+  handle: '@0xDesigner'
+  reason: Gen-Z crypto设计师/研究员，分析用户行为模式
+  type: native
