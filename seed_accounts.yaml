@@ -58,3 +58,37 @@ seed_accounts:
   handle: '@0xDesigner'
   reason: Gen-Z crypto设计师/研究员，分析用户行为模式
   type: native
+
+# ── Gen-Z 文化趋势层（为 Chris weekly cultural digest 新增）────────────────
+- category: Gen-Z Culture
+  handle: '@culturecrave'
+  reason: 专注追踪 trending 内容格式和 meme，Chris 点名推荐的文化情报源
+  type: observer
+- category: Gen-Z Culture
+  handle: '@litquidity'
+  reason: 北美最大匿名金融 meme 账号，粉丝群即 Gen-Z finance/crypto 核心人群，观察传播格式
+  type: observer
+- category: Gen-Z Culture
+  handle: '@ljin18'
+  reason: Li Jin，creator economy + 内容消费行为研究，Chris 推荐 newsletter 作者
+  type: observer
+- category: Gen-Z Culture
+  handle: '@wongmjane'
+  reason: Jane Manchun Wong，追踪各平台新功能和内容格式趋势，提前感知平台变化
+  type: observer
+- category: Gen-Z Crypto
+  handle: '@milesdeutscher'
+  reason: 头部 Gen-Z crypto KOL，粉丝画像高度对齐 D0 目标用户，观察其内容 hook 和格式
+  type: native
+- category: Gen-Z Crypto
+  handle: '@cobie'
+  reason: 匿名 crypto 文化标杆，引领过多轮 meme 和叙事格式创新，圈内格式风向标
+  type: native
+- category: Gen-Z Culture
+  handle: '@unusual_whales'
+  reason: 将复杂金融数据做成 viral 内容的典型案例，内容格式对 Chris IP 建设有直接参考
+  type: observer
+- category: Gen-Z Crypto
+  handle: '@zhusu'
+  reason: 经历清算后复出，其内容与 Gen-Z crypto 圈共鸣方式值得观察，叙事风格研究对象
+  type: native
