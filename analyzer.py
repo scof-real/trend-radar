@@ -92,9 +92,10 @@ def call_anthropic_api(prompt_text: str) -> str:
         if not api_key:
             print("[ERROR] ANTHROPIC_API_KEY not set", file=sys.stderr)
             return ""
+        model = os.environ.get("LLM_MODEL", "donut/claude-sonnet-4-6")
         client = anthropic.Anthropic(api_key=api_key)
         message = client.messages.create(
-            model="claude-sonnet-4-6",
+            model=model,
             max_tokens=4096,
             messages=[{"role": "user", "content": prompt_text}]
         )
